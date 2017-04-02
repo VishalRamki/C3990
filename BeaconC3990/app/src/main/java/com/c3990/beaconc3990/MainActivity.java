@@ -13,6 +13,7 @@ import com.estimote.sdk.BeaconManager;
 import com.estimote.sdk.EstimoteSDK;
 import com.estimote.sdk.Beacon;
 import com.estimote.sdk.Region;
+import com.estimote.sdk.SystemRequirementsChecker;
 
 import java.util.List;
 
@@ -43,10 +44,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         EstimoteSDK.initialize(getApplicationContext(), "testing-dt3", "b102220219e238615b5a45e0694f7ddb");
-
+        SystemRequirementsChecker.checkWithDefaultDialogs(this);
         // uncomment to enable debug-level logging
         // it's usually only a good idea when troubleshooting issues with the Estimote SDK
         EstimoteSDK.enableDebugLogging(true);
+
 
         beaconManager = new BeaconManager(getApplicationContext());
 
@@ -61,7 +63,11 @@ public class MainActivity extends AppCompatActivity {
                 // that the client has found. If there is a new beacon issue the notification
                 // and don't notify the user of that beacon until either the user leaves and reenters
                 // or until a predetermined time has elapsed.
+                Beacon b = list.get(0);
                 Log.d("Beacon-Data", list.get(0).toString());
+                Log.d("Beacon-Data", b.getProximityUUID().toString());
+                Log.d("Beacon-Data", String.valueOf(b.getMajor()));
+                Log.d("Beacon-Data", String.valueOf(b.getMinor()));
 
                 // showNotification() builds the notification and sends it to the user task bar.
                 // right now the notification does nothing but bring you back to the home page of
