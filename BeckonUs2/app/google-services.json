@@ -1,0 +1,52 @@
+{
+  "project_info": {
+    "project_number": "556376693849",
+    "project_id": "beckonuslogin"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:556376693849:android:ad4b8e6def603905",
+        "android_client_info": {
+          "package_name": "com.beckonus.beckonus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "556376693849-3prf19rav29utovjsffieh7a9rief7v3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.beckonus.beckonus",
+            "certificate_hash": "70b0c7f4b3a65362e2525132d22fe5fee4bddb3a"
+          }
+        },
+        {
+          "client_id": "556376693849-0e135cend13065eo7b73bh1oa5l1okab.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "556376693849-4v02hat1n7hrfsdgtbgfcm7jcfagb95l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAiWjLWPMmRaQ7Ty4daCyhGjTKCp73SyE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

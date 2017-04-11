@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/viewLocation"
+        android:title="View Current Location"/>
+    <item android:id="@+id/viewFavStores"
+        android:title="View Favourite Stores" />
+</menu>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BeckonUs</string>
+    <string name="title_activity_tester">TesterActivity</string>
+    <string name="signin">Sign in</string>
+    <string name="logout">Logout</string>
+    <string name="signout">Signed out</string>
+    <string name="loading">loading</string>
+</resources>
